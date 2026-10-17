@@ -29,34 +29,34 @@ This pipeline addresses these challenges by automating file validation, revision
 
 ```
 Document Files
-      |
-      v
+|
+v
 SSIS Control Flow
-      |
-      v
+|
+v
 File Identification
-      |
-      v
+|
+v
 SQL Server Validation
-      |
-      v
+|
+v
 Revision Verification
-      |
-      v
+|
+v
 Latest Revision Check
-      |
-      +----------------------+
-      |                      |
-      v                      v
+|
++----------------------+
+|                      |
+v                      v
 Eligible Files       Outdated Revisions
-      |
-      v
+|
+v
 Database Registration
-      |
-      v
+|
+v
 File ID Generation
-      |
-      v
+|
+v
 File Management / Archiving
 ```
 
