@@ -28,36 +28,36 @@ This pipeline addresses these challenges by automating file validation, revision
 **Architecture**
 
 ```
-Document Files
-|
-v
-SSIS Control Flow
-|
-v
-File Identification
-|
-v
-SQL Server Validation
-|
-v
-Revision Verification
-|
-v
-Latest Revision Check
-|
-+----------------------+
-|                      |
-v                      v
+    Document Files
+        |
+        v
+    SSIS Control Flow
+        |
+        v
+    File Identification
+        |
+        v
+    SQL Server Validation
+        |
+        v
+    Revision Verification
+        |
+        v
+    Latest Revision Check
+        |
+    +----------------------+
+    |                      |
+    v                      v
 Eligible Files       Outdated Revisions
-|
-v
-Database Registration
-|
-v
-File ID Generation
-|
-v
-File Management / Archiving
+        |
+        v
+    Database Registration
+        |
+        v
+    File ID Generation
+        |
+        v
+    File Management / Archiving
 ```
 
 _Note: This diagram represents the logical workflow. The exact execution sequence depends on the implemented SSIS packages._
